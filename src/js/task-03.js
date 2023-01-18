@@ -13,7 +13,7 @@ const images = [
   },
 ];
 const onGallery = document.querySelector('.gallery');
-console.log(onGallery);
+// console.log(onGallery);
 const photoGalery = images.map(image => `<li><img class = "picture" src = ${image.url} alt ="${image.alt}" width = '300px'> </img></li>`)
 .join("");
 
