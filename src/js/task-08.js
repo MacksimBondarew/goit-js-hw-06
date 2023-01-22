@@ -1,5 +1,5 @@
-const onForm = document.querySelector('.login-form');
-onForm.addEventListener("submit", clickButtonSumbit);
+const form = document.querySelector('.login-form');
+form.addEventListener("submit", clickButtonSumbit);
 
 function clickButtonSumbit(event) {
     event.preventDefault();
@@ -10,7 +10,6 @@ function clickButtonSumbit(event) {
     if (email.value === '' || password.value === '') {
         return alert('Please fill in all the fields!');
     }
-
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    console.log([{email: email.value, password: password.value}]);
     event.currentTarget.reset();
 }

@@ -10,8 +10,8 @@ const createBoxes = amount => {
   const baseObject = [];
   for (let i = 0; i < amount; i++) {
     const div = document.createElement('div')
-    div.style.width = `${10 + 30 * i}px`;
-    div.style.height = `${10 + 30 * i}px`;
+    div.style.width = `${30 + 10 * i}px`;
+    div.style.height = `${30 + 10 * i}px`;
     div.style.backgroundColor = getRandomHexColor();
     baseObject.push(div);
   }
